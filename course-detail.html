@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Admission | New Era Institute of Vocational & Continuing Education</title>
+    <title>Course Fee | New Era Institute of Vocational & Continuing Education</title>
 
     <link rel="stylesheet" href="css/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* Unique background overlay styling for the Admission page hero section */
+        /* Unique background overlay styling for the Course Fee page hero section */
         .hero {
             background: linear-gradient(rgba(20, 20, 40, 0.75), rgba(20, 20, 40, 0.75)), url('images/campus-bg4.jpg') no-repeat center center/cover !important;
         }
@@ -25,6 +25,82 @@
             pointer-events: none;
             text-decoration: none;
             box-shadow: none;
+        }
+        /* Fee table styling */
+        .fee-table-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            overflow-x: auto;
+        }
+        .fee-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            color: #333333;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .fee-table th, .fee-table td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14px;
+        }
+        .fee-table th {
+            background-color: #00bcd4;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        .fee-table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .department-title {
+            text-align: center;
+            color: #222222;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .remarks-box {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 5px solid #00bcd4;
+            border-radius: 4px;
+        }
+        .remarks-box h3 {
+            margin-bottom: 10px;
+            color: #333333;
+        }
+        .remarks-box ul {
+            padding-left: 20px;
+            line-height: 1.8;
+            color: #55555;
+        }
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+        .schedule-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .schedule-card h3 {
+            color: #00bcd4;
+            margin-bottom: 10px;
         }
     </style>
 
@@ -52,7 +128,7 @@
 
             <li><a href="courses.html">Courses</a></li>
 
-            <li><a href="admission.html" class="active">Admission</a></li>
+            <li><a href="course-fee.html" class="active">Course Fee</a></li>
 
             <li><a href="contact.html">Contact</a></li>
 
@@ -78,11 +154,11 @@
 
     <div class="hero-content">
 
-        <h1>Admission Information</h1>
+        <h1>Course Fee Structure</h1>
 
         <p>
 
-            Find out everything you need to know about joining our programmes, entry requirements, and application procedures.
+            Comprehensive breakdown of registration dates, commencement dates, application fees, semester fees, and grand totals for our programmes.
 
         </p>
 
@@ -91,183 +167,497 @@
 </section>
 
 <!-- ===========================
-     COURSE OVERVIEW
+     INTAKE SCHEDULES
 =========================== -->
 
-<section class="features">
+<div class="department-title">Intake & Registration Schedule</div>
 
-    <h2>Admission Overview</h2>
+<section class="schedule-grid">
 
-    <div class="feature-grid">
+    <div class="schedule-card">
+        <h3>March Intake</h3>
+        <p><strong>Registration Date:</strong> 05.03.2026</p>
+        <p><strong>Commencement Date:</strong> 09.03.2026</p>
+    </div>
 
-        <div class="feature-card">
+    <div class="schedule-card">
+        <h3>July Intake</h3>
+        <p><strong>Registration Date:</strong> 02.07.2026</p>
+        <p><strong>Commencement Date:</strong> 06.07.2026</p>
+    </div>
 
-            <h3>Intake Periods</h3>
-
-            <p>
-                January, May, and September intakes available.
-            </p>
-
-        </div>
-
-        <div class="feature-card">
-
-            <h3>Campus Location</h3>
-
-            <p>
-                New Era Institute of Vocational & Continuing Education,
-                Kuala Lumpur
-            </p>
-
-        </div>
-
-        <div class="feature-card">
-
-            <h3>Entry Pathways</h3>
-
-            <p>
-                Open to SPM/O-Level holders and working adults via APEL.
-            </p>
-
-        </div>
-
-        <div class="feature-card">
-
-            <h3>Application Mode</h3>
-
-            <p>
-                Online Application or In-Person Registration
-            </p>
-
-        </div>
-
+    <div class="schedule-card">
+        <h3>November Intake</h3>
+        <p><strong>Registration Date:</strong> 29.10.2026</p>
+        <p><strong>Commencement Date:</strong> 02.11.2026</p>
     </div>
 
 </section>
+
+<div style="text-align: center; font-style: italic; margin-bottom: 20px; color: #555;">
+    2 Years Diploma Programme
+</div>
 
 <!-- ===========================
-     PROGRAMME DESCRIPTION
+     FEE TABLES BY DEPARTMENT
 =========================== -->
 
-<section class="courses-preview">
+<!-- DEPARTMENT OF SMART BUSINESS AND HOSPITALITY -->
+<div class="department-title">Department of Smart Business and Hospitality</div>
 
-    <h2>Admission Procedure</h2>
+<div class="fee-table-container">
+    <table class="fee-table">
+        <tr>
+            <th>Fee / Semester</th>
+            <th>SIIT</th>
+            <th>LSI</th>
+            <th>IEDM</th>
+            <th>SIBIE</th>
+            <th>SIHL</th>
+            <th>TSIM</th>
+            <th>CSSI</th>
+            <th>ACSS</th>
+            <th>IHOS</th>
+            <th>SIHL</th>
+        </tr>
+        <tr>
+            <td>Application Fee</td>
+            <td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>1st Semester</td>
+            <td>RM 8,000</td><td>RM 8,000</td><td>RM 8,000</td><td>RM 8,000</td><td>RM 8,000</td><td>RM 6,800</td><td>RM 6,800</td><td>RM 4,900</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>Total (1st)</td>
+            <td>RM 8,200</td><td>RM 8,200</td><td>RM 8,200</td><td>RM 8,200</td><td>RM 8,200</td><td>RM 7,000</td><td>RM 7,000</td><td>RM 5,100</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>2nd Semester</td>
+            <td>RM 8,400</td><td>RM 8,400</td><td>RM 8,400</td><td>RM 8,400</td><td>RM 8,400</td><td>RM 6,400</td><td>RM 6,400</td><td>RM 4,900</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>3rd Semester</td>
+            <td>RM 6,400</td><td>RM 6,400</td><td>RM 6,400</td><td>RM 6,800</td><td>RM 6,800</td><td>RM 6,400</td><td>RM 6,400</td><td>RM 4,900</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>4th Semester</td>
+            <td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>RM 6,700</td><td>RM 6,700</td><td>-</td><td>-</td><td>RM 4,900</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>5th Semester</td>
+            <td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>RM 6,700</td><td>RM 6,700</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>6th Semester</td>
+            <td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td><strong>Grand Total</strong></td>
+            <td><strong>RM 36,800</strong></td><td><strong>RM 36,800</strong></td><td><strong>RM 36,800</strong></td><td><strong>RM 36,800</strong></td><td><strong>RM 36,800</strong></td><td><strong>RM 19,800</strong></td><td><strong>RM 19,800</strong></td><td><strong>RM 19,800</strong></td><td>-</td><td>-</td>
+        </tr>
+    </table>
 
-    <div class="course-card">
+    <table class="fee-table">
+        <tr>
+            <th>Fee / Semester</th>
+            <th>SIAC</th>
+            <th>ASIHP</th>
+            <th>ASIHPM</th>
+            <th>BMART</th>
+            <th>SIMAS</th>
+        </tr>
+        <tr>
+            <td>Application Fee</td>
+            <td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td>
+        </tr>
+        <tr>
+            <td>1st Semester</td>
+            <td>RM 8,000</td><td>RM 11,300</td><td>RM 5,800</td><td>RM 6,400</td><td>RM 8,600</td>
+        </tr>
+        <tr>
+            <td>Total (1st)</td>
+            <td>RM 8,200</td><td>RM 11,500</td><td>RM 6,000</td><td>RM 6,600</td><td>RM 8,800</td>
+        </tr>
+        <tr>
+            <td>2nd Semester</td>
+            <td>RM 8,400</td><td>RM 9,000</td><td>RM 6,000</td><td>RM 6,400</td><td>RM 8,600</td>
+        </tr>
+        <tr>
+            <td>3rd Semester</td>
+            <td>RM 7,800</td><td>RM 9,000</td><td>RM 6,000</td><td>RM 6,400</td><td>RM 8,600</td>
+        </tr>
+        <tr>
+            <td>4th Semester</td>
+            <td>RM 7,800</td><td>RM 9,000</td><td>RM 4,000</td><td>RM 6,400</td><td>RM 8,600</td>
+        </tr>
+        <tr>
+            <td>5th Semester</td>
+            <td>RM 7,800</td><td>RM 8,100</td><td>-</td><td>RM 6,400</td><td>RM 8,600</td>
+        </tr>
+        <tr>
+            <td>6th Semester</td>
+            <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td><strong>Grand Total</strong></td>
+            <td><strong>RM 40,000</strong></td><td><strong>RM 46,600</strong></td><td><strong>RM 22,200</strong></td><td><strong>RM 32,200</strong></td><td><strong>RM 43,200</strong></td>
+        </tr>
+    </table>
+</div>
 
-        <p>
 
-            Applying to New Era Institute is simple. Prospective students can submit their applications online or visit our campus for counseling and registration assistance. Our admissions team is ready to guide you through course selection and fee structures.
+<!-- DEPARTMENT OF INNOVATION AND TECHNOLOGY -->
+<div class="department-title">Department of Innovation and Technology</div>
 
-        </p>
+<div class="fee-table-container">
+    <table class="fee-table">
+        <tr>
+            <th>Fee / Semester</th>
+            <th>SEAI</th>
+            <th>SSED</th>
+            <th>XRSE</th>
+            <th>WADS</th>
+            <th>ESGT</th>
+            <th>ITCEH</th>
+        </tr>
+        <tr>
+            <td>Application Fee</td>
+            <td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>-</td>
+        </tr>
+        <tr>
+            <td>1st Semester</td>
+            <td>RM 8,000</td><td>RM 8,000</td><td>RM 8,000</td><td>RM 8,000</td><td>RM 8,000</td><td>-</td>
+        </tr>
+        <tr>
+            <td>Total (1st)</td>
+            <td>RM 8,200</td><td>RM 8,200</td><td>RM 8,200</td><td>RM 8,200</td><td>RM 8,200</td><td>-</td>
+        </tr>
+        <tr>
+            <td>2nd Semester</td>
+            <td>RM 8,400</td><td>RM 8,400</td><td>RM 8,400</td><td>RM 8,400</td><td>RM 8,400</td><td>-</td>
+        </tr>
+        <tr>
+            <td>3rd Semester</td>
+            <td>RM 6,400</td><td>RM 6,400</td><td>RM 6,400</td><td>RM 6,400</td><td>RM 6,400</td><td>-</td>
+        </tr>
+        <tr>
+            <td>4th Semester</td>
+            <td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>-</td>
+        </tr>
+        <tr>
+            <td>5th Semester</td>
+            <td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>-</td>
+        </tr>
+        <tr>
+            <td>6th Semester</td>
+            <td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>RM 4,600</td><td>-</td>
+        </tr>
+        <tr>
+            <td>7th Semester</td>
+            <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td><strong>Grand Total</strong></td>
+            <td><strong>RM 36,800</strong></td><td><strong>RM 36,800</strong></td><td><strong>RM 36,800</strong></td><td><strong>RM 36,800</strong></td><td><strong>RM 36,800</strong></td><td>-</td>
+        </tr>
+    </table>
+</div>
 
-        <br>
 
-        <p>
+<!-- DEPARTMENT OF CREATIVE MEDIA AND BEAUTY STUDIES -->
+<div class="department-title">Department of Creative Media and Beauty Studies</div>
 
-            Ensure all academic transcripts and identification documents are prepared prior to submitting your enrollment form.
+<div class="fee-table-container">
+    <table class="fee-table">
+        <tr>
+            <th>Fee / Semester</th>
+            <th>MMDC</th>
+            <th>DMMD</th>
+            <th>PVMM</th>
+            <th>VMMP</th>
+            <th>PBSM</th>
+            <th>SPBS</th>
+            <th>MAPB</th>
+            <th>SAM</th>
+        </tr>
+        <tr>
+            <td>Application Fee</td>
+            <td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td>
+        </tr>
+        <tr>
+            <td>1st Semester</td>
+            <td>RM 8,500</td><td>RM 8,500</td><td>RM 6,800</td><td>RM 8,500</td><td>RM 8,700</td><td>RM 8,700</td><td>RM 8,700</td><td>RM 8,700</td>
+        </tr>
+        <tr>
+            <td>Total (1st)</td>
+            <td>RM 8,700</td><td>RM 8,700</td><td>RM 7,000</td><td>RM 8,700</td><td>RM 8,900</td><td>RM 8,900</td><td>RM 8,900</td><td>RM 8,900</td>
+        </tr>
+        <tr>
+            <td>2nd Semester</td>
+            <td>RM 8,700</td><td>RM 8,700</td><td>RM 6,600</td><td>RM 8,700</td><td>RM 8,900</td><td>RM 8,900</td><td>RM 8,900</td><td>RM 8,900</td>
+        </tr>
+        <tr>
+            <td>3rd Semester</td>
+            <td>RM 6,900</td><td>RM 6,900</td><td>RM 6,600</td><td>RM 7,500</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>4th Semester</td>
+            <td>RM 4,800</td><td>RM 4,800</td><td>-</td><td>RM 6,900</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>5th Semester</td>
+            <td>RM 4,800</td><td>RM 4,800</td><td>-</td><td>RM 6,900</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>6th Semester</td>
+            <td>RM 4,800</td><td>RM 4,800</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td><strong>Grand Total</strong></td>
+            <td><strong>RM 38,700</strong></td><td><strong>RM 38,700</strong></td><td><strong>RM 20,200</strong></td><td><strong>RM 38,700</strong></td><td><strong>RM 17,800</strong></td><td><strong>RM 17,800</strong></td><td><strong>RM 17,800</strong></td><td><strong>RM 17,800</strong></td>
+        </tr>
+    </table>
 
-        </p>
+    <table class="fee-table">
+        <tr>
+            <th>Fee / Semester</th>
+            <th>PBSBA</th>
+            <th>PBSHS</th>
+            <th>DMCC</th>
+            <th>EVMD</th>
+        </tr>
+        <tr>
+            <td>Application Fee</td>
+            <td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td>
+        </tr>
+        <tr>
+            <td>1st Semester</td>
+            <td>RM 8,700</td><td>RM 8,700</td><td>RM 8,934</td><td>RM 8,500</td>
+        </tr>
+        <tr>
+            <td>Total (1st)</td>
+            <td>RM 8,900</td><td>RM 8,900</td><td>RM 9,134</td><td>RM 8,700</td>
+        </tr>
+        <tr>
+            <td>2nd Semester</td>
+            <td>RM 8,900</td><td>RM 8,900</td><td>RM 8,933</td><td>RM 8,700</td>
+        </tr>
+        <tr>
+            <td>3rd Semester</td>
+            <td>-</td><td>-</td><td>RM 8,933</td><td>RM 6,900</td>
+        </tr>
+        <tr>
+            <td>4th Semester</td>
+            <td>-</td><td>-</td><td>-</td><td>RM 4,800</td>
+        </tr>
+        <tr>
+            <td>5th Semester</td>
+            <td>-</td><td>-</td><td>-</td><td>RM 4,800</td>
+        </tr>
+        <tr>
+            <td>6th Semester</td>
+            <td>-</td><td>-</td><td>-</td><td>RM 4,800</td>
+        </tr>
+        <tr>
+            <td><strong>Grand Total</strong></td>
+            <td><strong>RM 17,800</strong></td>
+            <td><strong>RM 17,800</strong></td>
+            <td><strong>RM 27,000</strong></td>
+            <td><strong>RM 38,700</strong></td>
+        </tr>
+    </table>
+</div>
 
-    </div>
 
-</section>
+<!-- DEPARTMENT OF MUSIC AND PERFORMING ARTS -->
+<div class="department-title">Department of Music and Performing Arts</div>
 
-<!-- ===========================
-     CORE MODULES
-=========================== -->
+<div class="fee-table-container">
+    <table class="fee-table">
+        <tr>
+            <th>Fee / Semester</th>
+            <th>POPC</th>
+        </tr>
+        <tr>
+            <td>Application Fee</td>
+            <td>RM 200</td>
+        </tr>
+        <tr>
+            <td>1st Semester</td>
+            <td>RM 9,000</td>
+        </tr>
+        <tr>
+            <td>Total (1st)</td>
+            <td>RM 9,200</td>
+        </tr>
+        <tr>
+            <td>2nd Semester</td>
+            <td>RM 7,800</td>
+        </tr>
+        <tr>
+            <td>3rd Semester</td>
+            <td>RM 6,000</td>
+        </tr>
+        <tr>
+            <td>4th Semester</td>
+            <td>RM 4,600</td>
+        </tr>
+        <tr>
+            <td>5th Semester</td>
+            <td>RM 4,600</td>
+        </tr>
+        <tr>
+            <td>6th Semester</td>
+            <td>RM 4,600</td>
+        </tr>
+        <tr>
+            <td><strong>Grand Total</strong></td>
+            <td><strong>RM 36,800</strong></td>
+        </tr>
+    </table>
+</div>
 
-<section class="features">
 
-    <h2>Application Steps</h2>
+<!-- DEPARTMENT OF INDUSTRIAL ENGINEERING -->
+<div class="department-title">Department of Industrial Engineering</div>
 
-    <div class="feature-grid">
+<div class="fee-table-container">
+    <table class="fee-table">
+        <tr>
+            <th>Fee / Semester</th>
+            <th>IEMT</th>
+            <th>CIEI</th>
+            <th>PDIE</th>
+            <th>MDMI</th>
+            <th>EIRT</th>
+            <th>ANEV</th>
+        </tr>
+        <tr>
+            <td>Application Fee</td>
+            <td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>-</td>
+        </tr>
+        <tr>
+            <td>1st Semester</td>
+            <td>RM 8,000</td><td>RM 8,000</td><td>RM 8,000</td><td>RM 8,000</td><td>RM 9,600</td><td>-</td>
+        </tr>
+        <tr>
+            <td>Total (1st)</td>
+            <td>RM 8,200</td><td>RM 8,200</td><td>RM 8,200</td><td>RM 8,200</td><td>RM 9,800</td><td>-</td>
+        </tr>
+        <tr>
+            <td>2nd Semester</td>
+            <td>RM 8,400</td><td>RM 8,400</td><td>RM 8,400</td><td>RM 8,200</td><td>RM 9,800</td><td>-</td>
+        </tr>
+        <tr>
+            <td>3rd Semester</td>
+            <td>RM 6,800</td><td>RM 6,800</td><td>RM 6,800</td><td>RM 7,800</td><td>RM 8,800</td><td>-</td>
+        </tr>
+        <tr>
+            <td>4th Semester</td>
+            <td>RM 6,700</td><td>RM 6,700</td><td>RM 6,700</td><td>RM 7,800</td><td>RM 7,700</td><td>-</td>
+        </tr>
+        <tr>
+            <td>5th Semester</td>
+            <td>RM 6,700</td><td>RM 6,700</td><td>RM 6,700</td><td>RM 6,800</td><td>RM 7,700</td><td>-</td>
+        </tr>
+        <tr>
+            <td>6th Semester</td>
+            <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td><strong>Grand Total</strong></td>
+            <td><strong>RM 36,800</strong></td><td><strong>RM 36,800</strong></td><td><strong>RM 36,800</strong></td><td><strong>RM 38,800</strong></td><td><strong>RM 43,800</strong></td><td>-</td>
+        </tr>
+    </table>
+</div>
 
-        <div class="feature-card">
-            <h3>1. Choose Programme</h3>
-            <p>Explore our vocational courses and select your preferred field of study</p>
-        </div>
 
-        <div class="feature-card">
-            <h3>2. Check Requirements</h3>
-            <p>Ensure you meet the basic academic or work-experience criteria</p>
-        </div>
+<!-- MALAYSIA SKILLS CERTIFICATION (SKM) PROGRAMME -->
+<div class="department-title">Malaysia Skills Certification (SKM) Programme</div>
 
-        <div class="feature-card">
-            <h3>3. Submit Application</h3>
-            <p>Fill out the online application form or visit our admissions office</p>
-        </div>
+<div class="fee-table-container">
+    <table class="fee-table">
+        <tr>
+            <th>Fee / Semester</th>
+            <th>SKMA</th>
+            <th>DSKM</th>
+            <th>GDSK</th>
+            <th>MOAS</th>
+            <th>KMMD</th>
+        </tr>
+        <tr>
+            <td>Application Fee</td>
+            <td>RM 200</td><td>RM 200</td><td>RM 200</td><td>RM 200</td><td>-</td>
+        </tr>
+        <tr>
+            <td>1st Semester</td>
+            <td>RM 3,000</td><td>RM 3,200</td><td>RM 3,800</td><td>RM 3,000</td><td>-</td>
+        </tr>
+        <tr>
+            <td>Total (1st)</td>
+            <td>RM 3,200</td><td>RM 3,400</td><td>RM 4,000</td><td>RM 3,200</td><td>-</td>
+        </tr>
+        <tr>
+            <td>2nd Semester</td>
+            <td>RM 3,000</td><td>RM 3,200</td><td>RM 3,700</td><td>RM 3,000</td><td>-</td>
+        </tr>
+        <tr>
+            <td>3rd Semester</td>
+            <td>RM 3,000</td><td>RM 3,200</td><td>RM 3,700</td><td>RM 2,800</td><td>-</td>
+        </tr>
+        <tr>
+            <td>4th Semester</td>
+            <td>RM 2,250</td><td>RM 2,400</td><td>RM 3,675</td><td>RM 2,200</td><td>-</td>
+        </tr>
+        <tr>
+            <td><strong>Grand Total</strong></td>
+            <td><strong>RM 11,450</strong></td><td><strong>RM 12,200</strong></td><td><strong>RM 15,075</strong></td><td><strong>RM 11,200</strong></td><td>-</td>
+        </tr>
+    </table>
+</div>
 
-        <div class="feature-card">
-            <h3>4. Enrollment & Fees</h3>
-            <p>Receive your offer letter and complete fee arrangements to secure your spot</p>
-        </div>
 
-    </div>
+<!-- PART-TIME PROGRAMMES -->
+<div class="department-title">Part-Time Programmes</div>
 
-</section>
+<div class="fee-table-container">
+    <table class="fee-table">
+        <tr>
+            <th>Fee Details</th>
+            <th>SKM 1T</th>
+            <th>SKM 2T</th>
+            <th>SKM 3T</th>
+            <th>DKM 4T</th>
+        </tr>
+        <tr>
+            <td>Application Fee</td>
+            <td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>Tuition Fee</td>
+            <td>RM 1,350</td><td>RM 1,500</td><td>RM 1,650</td><td>RM 2,000</td>
+        </tr>
+        <tr>
+            <td><strong>Grand Total</strong></td>
+            <td><strong>RM 1,350</strong></td><td><strong>RM 1,500</strong></td><td><strong>RM 1,650</strong></td><td><strong>RM 2,000</strong></td>
+        </tr>
+    </table>
+</div>
 
-<!-- ===========================
-     ENTRY REQUIREMENTS
-=========================== -->
 
-<section class="courses-preview">
+<!-- REMARKS -->
 
-    <h2>General Entry Requirements</h2>
-
-    <div class="course-card">
-
-        <ul style="text-align:left; line-height:2; padding-left:20px;">
-
-            <li>Completed secondary education (SPM / O-Level or equivalent)</li>
-
-            <li>Pass an interview or basic aptitude screening where required</li>
-
-            <li>Alternative entry routes available via work experience (APEL)</li>
-
-        </ul>
-
-    </div>
-
-</section>
-
-<!-- ===========================
-     CAREER OPPORTUNITIES (DEMO DEAD BUTTONS)
-=========================== -->
-
-<section class="features">
-
-    <h2>Quick Links & Status</h2>
-
-    <div class="feature-grid">
-
-        <div class="feature-card">
-            <h3>Online Portal</h3>
-            <p>Access status tracking</p>
-            <a href="#" class="course-btn disabled">View Details</a>
-        </div>
-
-        <div class="feature-card">
-            <h3>Fee Structure</h3>
-            <p>Detailed tuition breakdown</p>
-            <a href="#" class="course-btn disabled">View Details</a>
-        </div>
-
-        <div class="feature-card">
-            <h3>Financial Aid</h3>
-            <p>Scholarships and loans</p>
-            <a href="#" class="course-btn disabled">View Details</a>
-        </div>
-
-        <div class="feature-card">
-            <h3>Download Brochure</h3>
-            <p>Information booklet</p>
-            <a href="#" class="course-btn disabled">View Details</a>
-        </div>
-
-    </div>
-
-</section>
+<div class="remarks-box">
+    <h3>Remarks & Additional Information</h3>
+    <ul>
+        <li>The above fees included all foreign certification, registration, and assessment fees.</li>
+        <li>BMART, SIHLS & SIHPM course fees are to be paid on every 2 months' installment basis.</li>
+        <li>The institute reserves the right to adjust fees.</li>
+        <li>The fee for the Professional Beauty Skills Course does not include makeup, manicure, beauty products and appliances.</li>
+        <li>RM50 one year / RM90 two years Student Union fee will be collected on the registration day by Student Union’s representatives.</li>
+    </ul>
+</div>
 
 <!-- ===========================
      CTA
@@ -283,13 +673,13 @@
 
     <p>
 
-        Take the first step toward a successful career by applying today.
+        Review our fee options and take the next step by contacting our admissions office.
 
     </p>
 
     <a href="contact.html" class="btn-primary">
 
-        Apply Now
+        Contact Us
 
     </a>
 
